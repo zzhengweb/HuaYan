@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>苏州华研医用科技发展有限公司</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content=""> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  <script src="js/flexible.js"></script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--顶部导航-->
+  <nav class="header_bg close_nav" id="change_nav" >
+    <div class="container_zz">
+      <div class="header_nav" onmouseleave="popupHide()">
+        <div class="change_btn visible_xs" id="change_btn">
+            <img src="./images/open.jpg" class="open_btn">
+            <img src="./images/close.jpg" class="close_btn">
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull"></a>
+        </div>
+        <ul class="header_list">
+          <li onMouseOver="popupHide()" class="active"><a href="index.html">首页</a></li>
+          <li onMouseOver="popupHide()"><a href="pro_center.html">产品介绍</a></li>
+          <li onMouseOver="popupHide()"><a href="industry.html">行业应用</a></li>
+          <li onMouseOver="popupHide()"><a href="service.html">服务支持</a></li>
+          <li onMouseOver="popupHide()"><a href="news.html">新闻动态</a></li>
+          <li onMouseOver="popupComponent()" onClick="popupChange()">
+            <a style="cursor: pointer;" >关于我们<span class="visible_xs up_icon"><img src="./images/arrow.jpg"></span></a>
+            <ul class="popup" id="popup">
+              <li><a href="intro.html">公司介绍</a></li>
+              <li><a href="job.html">人才招聘</a></li>
+              <li><a href="develop.html">发展历程</a></li>
+              <li><a href="culture.html">企业文化</a></li>
+              <li><a href="university.html">企业大学</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="change_lang hidden_xs">
+          <a href="#" class="border_en">
+            <img src="./images/en_logo.jpg">
+            <span>English</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 海报 -->
+  <div class="banner">
+    <div class="swiper-container" id="swiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/banner/1.jpg" class="imgFull hidden_xs">
+          <img src="./images/banner/1-xs.jpg" class="imgFull visible_xs">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/banner/2.jpg" class="imgFull hidden_xs">
+          <img src="./images/banner/2-xs.jpg" class="imgFull visible_xs">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- 首页简介 -->
+  <div class="home_intro">
+    <div class="container_zz">
+      <div class="text-center">
+        <div class="h3">华研医用科技</div>
+        <p>公司与北京大学茹炳根教授团队进行的“产学研”合作项目“重组人巯基短肽的生产与产品开发”，已成功完成中试级别工艺验证。<br/>同时公司与中国药科大学、东南大学建立合作关系，成立了“中国药科大学-苏州汇涵（华研） 联合实验室”</p>
+        <div class="more_btn">
+          <a href="#">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pro_show">
+    <div class="container_zz">
+      <div class="bs-example bs-example-tabs pro_show_list" data-example-id="togglable-tabs">
+        <ul id="myTabs" class="nav nav-tabs pro_show_title" role="tablist">
+          <li class="active"><a href="#pro_show1" data-toggle="tab" aria-controls="pro_show1">抗氧化系列</a></li>
+          <li><a href="#pro_show2" data-toggle="tab" aria-controls="pro_show2">酶制剂系列</a></li>
+          <li><a href="#pro_show3" data-toggle="tab" aria-controls="pro_show3">生物材料系列</a></li>
+          <li><a href="#pro_show4" data-toggle="tab" aria-controls="pro_show1">药物中间体系列 </a></li>
+          <li><a href="#pro_show5" data-toggle="tab" aria-controls="pro_show2">化妆品系列</a></li>
+          <li><a href="#pro_show6" data-toggle="tab" aria-controls="pro_show3">技术服务</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content pro_show_type">
+          <div class="tab-pane active type_box" id="pro_show1">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <img src="./images/pro_show/1.jpg" class="img-responsive">
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">抗氧化系列</div>
+                  <p>苏州汇涵医用科技发展有限公司（简称“汇涵科技”），总部位于苏州常熟，营销中心位于上海。 公司始终致力于医疗器械的研发、生产和销售，产品涵盖生物医用材料、敷料、手术器械、医学日用品等四大领域，为患者提供创面全周期管理方案，为医生提供微创手术器械全系列产品，为宠物、儿童、女性、老人、家庭提供轻护理产品。汇涵科技嫁接资源，从患者、消费者需求角度设计、开发品质与价格平衡的产品。汇涵科技始终坚持的使命是</p>
+                  <img src="./images/pro_show/1/1.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane type_box" id="pro_show2">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <img src="./images/pro_show/1.jpg" class="img-responsive">
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">抗氧化系列2</div>
+                  <p>苏州汇涵医用科技发展有限公司（简称“汇涵科技”），总部位于苏州常熟，营销中心位于上海。 公司始终致力于医疗器械的研发、生产和销售，产品涵盖生物医用材料、敷料、手术器械、医学日用品等四大领域，为患者提供创面全周期管理方案，为医生提供微创手术器械全系列产品，为宠物、儿童、女性、老人、家庭提供轻护理产品。汇涵科技嫁接资源，从患者、消费者需求角度设计、开发品质与价格平衡的产品。汇涵科技始终坚持的使命是</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane type_box" id="pro_show3">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <img src="./images/pro_show/1.jpg" class="img-responsive">
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">抗氧化系列3</div>
+                  <p>苏州汇涵医用科技发展有限公司（简称“汇涵科技”），总部位于苏州常熟，营销中心位于上海。 公司始终致力于医疗器械的研发、生产和销售，产品涵盖生物医用材料、敷料、手术器械、医学日用品等四大领域，为患者提供创面全周期管理方案，为医生提供微创手术器械全系列产品，为宠物、儿童、女性、老人、家庭提供轻护理产品。汇涵科技嫁接资源，从患者、消费者需求角度设计、开发品质与价格平衡的产品。汇涵科技始终坚持的使命是</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane type_box" id="pro_show4">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <img src="./images/pro_show/1.jpg" class="img-responsive">
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">抗氧化系列4</div>
+                  <p>苏州汇涵医用科技发展有限公司（简称“汇涵科技”），总部位于苏州常熟，营销中心位于上海。 公司始终致力于医疗器械的研发、生产和销售，产品涵盖生物医用材料、敷料、手术器械、医学日用品等四大领域，为患者提供创面全周期管理方案，为医生提供微创手术器械全系列产品，为宠物、儿童、女性、老人、家庭提供轻护理产品。汇涵科技嫁接资源，从患者、消费者需求角度设计、开发品质与价格平衡的产品。汇涵科技始终坚持的使命是</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane type_box" id="pro_show5">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <img src="./images/pro_show/1.jpg" class="img-responsive">
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">抗氧化系列5</div>
+                  <p>苏州汇涵医用科技发展有限公司（简称“汇涵科技”），总部位于苏州常熟，营销中心位于上海。 公司始终致力于医疗器械的研发、生产和销售，产品涵盖生物医用材料、敷料、手术器械、医学日用品等四大领域，为患者提供创面全周期管理方案，为医生提供微创手术器械全系列产品，为宠物、儿童、女性、老人、家庭提供轻护理产品。汇涵科技嫁接资源，从患者、消费者需求角度设计、开发品质与价格平衡的产品。汇涵科技始终坚持的使命是</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane type_box" id="pro_show6">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <img src="./images/pro_show/1.jpg" class="img-responsive">
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">抗氧化系列6</div>
+                  <p>苏州汇涵医用科技发展有限公司（简称“汇涵科技”），总部位于苏州常熟，营销中心位于上海。 公司始终致力于医疗器械的研发、生产和销售，产品涵盖生物医用材料、敷料、手术器械、医学日用品等四大领域，为患者提供创面全周期管理方案，为医生提供微创手术器械全系列产品，为宠物、儿童、女性、老人、家庭提供轻护理产品。汇涵科技嫁接资源，从患者、消费者需求角度设计、开发品质与价格平衡的产品。汇涵科技始终坚持的使命是</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.2.2.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script language="javascript"> 
+    var mySwiper1 = new Swiper('#swiper1',{
+      autoplay:true,
+      delay: 3000,
+      loop : true,
+      pagination: {
+        el: '.swiper-pagination',
+        bulletClass : 'my-bullet',
+        bulletActiveClass: 'my-bullet-active',
+        clickable :true,
+      },
+    })
+  </script>
+</body>
+</html>
