@@ -22,7 +22,7 @@
   <!--顶部导航-->
   <nav class="header_bg close_nav" id="change_nav" >
     <div class="container_zz">
-      <div class="header_nav" onmouseleave="popupHide()">
+      <div class="header_nav">
         <div class="change_btn visible_xs" id="change_btn">
             <img src="./images/open.jpg" class="open_btn">
             <img src="./images/close.jpg" class="close_btn">
@@ -31,21 +31,12 @@
           <a href="index.html"><img src="./images/logo.png" class="imgFull"></a>
         </div>
         <ul class="header_list">
-          <li onMouseOver="popupHide()" class="active"><a href="index.html">首页</a></li>
-          <li onMouseOver="popupHide()"><a href="pro_center.html">产品介绍</a></li>
-          <li onMouseOver="popupHide()"><a href="industry.html">行业应用</a></li>
-          <li onMouseOver="popupHide()"><a href="service.html">服务支持</a></li>
-          <li onMouseOver="popupHide()"><a href="news.html">新闻动态</a></li>
-          <li onMouseOver="popupComponent()" onClick="popupChange()">
-            <a style="cursor: pointer;" >关于我们<span class="visible_xs up_icon"><img src="./images/arrow.jpg"></span></a>
-            <ul class="popup" id="popup">
-              <li><a href="intro.html">公司介绍</a></li>
-              <li><a href="job.html">人才招聘</a></li>
-              <li><a href="develop.html">发展历程</a></li>
-              <li><a href="culture.html">企业文化</a></li>
-              <li><a href="university.html">企业大学</a></li>
-            </ul>
-          </li>
+          <li class="active"><a href="index.html">首页</a></li>
+          <li><a href="intro.html">企业简介</a></li>
+          <li><a href="industry.html">研发中心</a></li>
+          <li><a href="service.html">产品中心</a></li>
+          <li><a href="news.html">新闻中心</a></li>
+          <li><a href="news.html">联系我们</a></li>
         </ul>
         <div class="change_lang hidden_xs">
           <a href="#" class="border_en">
@@ -178,6 +169,71 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="home_show">
+    <div class="show_item">
+      <img src="./images/home/1.jpg" class="item_img">
+    </div>
+    <div class="show_item item_info item_green">
+      <div class="item_title">公司介绍</div>
+      <div class="item_content">苏州华研医用科技有限公司坐落在历史文化名城常熟，位于常熟市高新技术产业园达明路8号。公司依托生物...</div>
+      <div class="item_more"><a href="#">了解更多</a></div>
+    </div>
+    <div class="show_item">
+      <img src="./images/home/2.jpg" class="item_img">
+    </div>
+    <div class="show_item item_info item_blue">
+      <div class="item_title">研发中心</div>
+      <div class="item_content">不断的为员工、客户、环境、弱势群体创造越来越多的改变与帮助，共同开启更好的未来</div>
+      <div class="item_more"><a href="#">了解更多</a></div>
+    </div>
+    <div class="show_item">
+      <img src="./images/home/3.jpg" class="item_img">
+    </div>
+    <div class="show_item item_info item_grey">
+      <div class="item_title">新闻中心</div>
+      <div class="item_news">
+        <div class="news_line"><span class="news_title"><a href="#">记跑步知识普及讲座&跑步技术交流活动跑步技术交流活动</a></span><span class="time">2020.12.16</span></div>
+        <div class="news_line"><span class="news_title"><a href="#">记跑步知识普及讲座&跑步技术交流活动</a></span><span class="time">2020.12.16</span></div>
+      </div>
+      <div class="item_more"><a href="#">了解更多</a></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container_zz">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3">
+              <img src="./images/footer_logo.jpg">
+            </div>
+            <div class="col-xs-12 col-lg-9">
+              <div class="footer_ph">
+                <img src="./images/footer_ph.jpg">公司电话：0512-80655555
+              </div>
+              <div class="footer_info">公司地址：常熟经济技术开发区高新技术产业园达明路8号</div>
+              <div class="footer_info">邮政编码：2150000      传真：0512-52862685      邮箱：info@hvha.cn</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="footer_ph">
+            快捷入口
+          </div>
+          <div class="footer_nav">
+            <div class="nav_item"><a href="#">首页</a></div>
+            <div class="nav_item"><a href="#">企业简介</a></div>
+            <div class="nav_item"><a href="#">研发中心</a></div>
+            <div class="nav_item"><a href="#">产品中心</a></div>
+            <div class="nav_item"><a href="#">新闻中心</a></div>
+            <div class="nav_item"><a href="#">联系我们</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer_foot">
+    <div class="container_zz">COPYRIGHT 2020 ALL RIGHTS RESERVED　版权所有：苏州华研医用科技发展有限公司　苏ICP备13036335号</div>
   </div>
   <script src="js/jquery.2.2.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

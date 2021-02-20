@@ -225,6 +225,7 @@ $mainColor:#6db92b;
 					display: inline-block;
 					border-radius: 0;
 					border-top: 2px solid transparent;
+                    color: #ffffff;
 					&:hover{
 						background-color: transparent;
 					}
@@ -233,7 +234,6 @@ $mainColor:#6db92b;
 					background-color: #6db92b;
 					a{
 						border: none;
-						color: #ffffff;
 						background-color: transparent;
 					}
 				}
@@ -263,4 +263,197 @@ $mainColor:#6db92b;
 			}
 		}
 	}
+}
+// 首页展示
+.home_show{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 160px;
+    .show_item{
+        width: calc(100% / 3);
+        .item_img{
+            width: 100%;
+        }
+        &.item_info{
+            padding:0 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            .item_title{
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .item_content{
+                font-size: 20px;
+                line-height: 1.6em;
+                margin-bottom: 40px;
+            }
+            .item_more{
+                width: 96px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 14px;
+                display: inline-block;
+                background-color: white;
+                border-radius: 12px;
+                text-align: center;
+            }
+            .item_news{
+                margin-bottom: 40px;
+                .news_line{
+                    font-size: 20px;
+                    line-height: 1.6em;
+                    display: flex;
+                    .news_title{
+                        width: calc(100% - 145px);
+                        display: inline-block;
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        white-space: nowrap;
+                        a{
+                            color: white;
+                        }
+                    }
+                    .time{
+                        width: 145px;
+                        text-align: right;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        &.item_green{
+            background-color: $mainColor;
+            .item_more{
+                a{
+                    color: $mainColor;
+                }
+            }
+        }
+        &.item_blue{
+            background-color: #0054a7;
+            .item_more{
+                a{
+                    color: #0054a7;
+                }
+            }
+        }
+        &.item_grey{
+            background-color: #959394;
+            .item_more{
+                a{
+                    color: #959394;
+                }
+            }
+        }
+    }
+}
+// 底部
+.footer{
+    background-color: #434343;
+    padding:70px 0 50px 0;
+    color: #d2d2d2;
+    .container_zz{
+        max-width:1340px;
+        padding:0 30px;
+    }
+    a{
+        color: #d2d2d2; 
+    }
+    .footer_ph{
+        font-size: 22px;
+        margin-bottom: 15px;
+        img{
+            margin-right: 15px;
+        }
+    }
+    .footer_info{
+        line-height: 1.7em;
+        font-size: 14px;
+    }
+    .footer_nav{
+        display: flex;
+        .nav_item{
+            margin-right: 30px;
+            a{
+                font-size: 16px;
+                line-height: 1.7em;
+            }
+        }
+    }
+}
+.footer_foot{
+    font-size: 14px;
+    line-height: 2.715em;
+    .container_zz{
+        max-width:1340px;
+        padding:0 30px;
+    }
+}
+// 内页标题
+.inner_title{
+    background-color: #fafafa;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    .title_cn{
+        font-size: 24px;
+        line-height: 1.6em;
+    }
+    .title_en{
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+}
+// 简介
+.intro_wrapper{
+    background-color: #fafafa;
+    p{
+        font-size: 16px;
+        color: #666666;
+        line-height: 1.875em;
+        margin-bottom: 15px;
+    }
+    .num_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .num_item{
+            width: calc( (100% - 30px) / 4);
+            text-align: center;
+            background-color: #e6f0ed;
+            margin-top: 10px;
+            padding:20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:first-child{
+                background-color: $mainColor;
+                color: white;
+                font-size: 22px;
+                font-weight: bold;
+                span{
+                    font-size: 14px;
+                    font-weight: normal;
+                    margin-left: 5px;
+                }
+            }
+            .item_one{
+                font-size: 28px;
+                line-height: 1.4em;
+            }
+            .item_two{
+                font-size: 16px;
+                color: #666666;
+            }
+        }
+    }
+    .intro_content{
+        background-color: white;
+        padding:28px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 2px rgba(0,0,0,.05);
+    }
 }
