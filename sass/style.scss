@@ -7,6 +7,7 @@ a:hover,a{
 	color: #333333;
 }
 $mainColor:#6db92b;
+$mainBgColor:#fafafa;
 .more_btn{
 	width: 96px;
 	height: 24px;
@@ -394,7 +395,7 @@ $mainColor:#6db92b;
 }
 // 内页标题
 .inner_title{
-    background-color: #fafafa;
+    background-color: $mainBgColor;
     padding-top: 50px;
     padding-bottom: 35px;
     .title_cn{
@@ -409,7 +410,7 @@ $mainColor:#6db92b;
 }
 // 简介
 .intro_wrapper{
-    background-color: #fafafa;
+    background-color: $mainBgColor;
     p{
         font-size: 16px;
         color: #666666;
@@ -460,7 +461,7 @@ $mainColor:#6db92b;
 }
 
 .yanfa_wrapper{
-    background-color: #fafafa;
+    background-color: $mainBgColor;
     padding-bottom: 100px;
     .top_list{
         display: flex;
@@ -580,6 +581,167 @@ $mainColor:#6db92b;
                     justify-content: center;
                     font-size: 15px;
                 }
+            }
+        }
+    }
+}
+
+// 新闻中心
+.news_wrapper{
+    background-color: $mainBgColor;
+    padding-bottom: 68px;
+    .news_bg{
+        background-color: white;
+        box-shadow: 0 0 2px rgba(0,0,0,.05);
+        padding:28px 0;
+        .news_item{
+            display: flex;
+            border-bottom: 1px dashed #eeeeee;
+            padding:24px 32px;
+            .item_left{
+                width:66px;
+                height: 66px;
+                background-color: $mainColor;
+                color: white;
+                text-align: center;
+                padding-top: 6px;
+                border-radius: 2px;
+                .item_day{
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+                .item_time{
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+            .item_right{
+                flex:1;
+                width: 200px;
+                padding:5px 28px;
+                .item_title{
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                    font-size: 18px;
+                    line-height: 1.75em;
+                }
+                .item_info{
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    color: #666666;
+                }
+            }
+        }
+        .pages_list{
+            padding:36px 32px 0 32px;
+            .pages_item{
+                display: inline-block;
+                width:38px;
+                height: 38px;
+                background-color: $mainColor;
+                text-align: center;
+                a{
+                    color: white;
+                    line-height: 38px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.contact_wrapper{
+    background-color: $mainBgColor;
+    .map{
+        height: 384px;
+        background-color: #eeeeee;
+    }
+    .contact_info{
+        .info_top{
+            padding:22px;
+            .top_line{
+                padding-top: 4px;
+                font-size: 18px;
+                line-height: 1.75em;
+                font-family: Arial, Helvetica, sans-serif;
+                span{
+                    margin-right: 60px;
+                }
+            }
+        }
+        .info_bottom{
+            padding:0 22px 100px 22px;
+            display: flex;
+            .info_left{
+                padding-right: calc(100% / 12);
+            }
+            .info_item{
+                margin-bottom: 40px;
+                .info_name{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .info_line{
+                    font-size: 16px;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+}
+.team_wrapper{
+    background-color: $mainBgColor;
+    .container_zz{
+        max-width:1260px;
+        padding:0 30px;
+    }
+    .team_box1{
+        display: flex;
+        background-color: #f5f5f5;
+        margin-bottom: 46px;
+        >img{
+            height: 324px;
+        }
+        .box1_content{
+            flex: 1;
+            width: 200px;
+            padding:40px 50px 0 50px;
+            p{
+                font-size: 16px;
+                color: #666666;
+                line-height: 1.75em;
+            }
+            .title{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .team_box2{
+        display: flex;
+        margin-bottom: 80px;
+        >img{
+            height: 160px;
+        }
+        .box2_content{
+            background-color: $mainColor;
+            flex: 1;
+            width: 200px;
+            padding:20px 20px 0 20px;
+            p{
+                font-size: 16px;
+                color: #ffffff;
+                line-height: 1.5em;
+            }
+            .title{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 8px;
+                color: #ffffff;
             }
         }
     }
