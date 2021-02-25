@@ -79,26 +79,32 @@ $mainBgColor:#fafafa;
     padding:14px 0 10px 0;
 	position: relative;
     .popup{
+        border-top:3px solid $mainColor;
+        display: none;
         position: absolute;
+        right: 0;
         list-style: none;
         padding-top: 20px;
-        padding-left: 0;
         z-index: 10;
-        width: 100%;
-        display: none;
         top:100%;
-        left: 0;
-        height: 80px;
-        background-color: rgba(7,45,73,.85);
+        height: 152px;
+        background-color: rgba(247,247,247,1);
+        padding-right: 30px;
         li{
-            flex: 1;
             text-align: center;
             border-right: 1px solid rgba(255,255,255,.1);
-            height: 40px;
+            margin-right: 10px;
+            text-align: center;
             a{
-                font-size: 18px;
+                font-size: 14px;
                 color: white;
-                line-height: 2.2222em;
+                line-height: 3em;
+                >img{
+                    margin:0 auto;
+                }
+                .name{
+                    color: #333;
+                }
             }
             &:last-child{
                 border-right: none;
@@ -151,6 +157,11 @@ $mainBgColor:#fafafa;
             > a{
                 font-size: 16px;
                 line-height: 4em;
+            }
+            &:hover{
+                .popup{
+                    display: flex;
+                }
             }
             &.active > a{
                 color: $mainColor;
