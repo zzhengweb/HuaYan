@@ -64,9 +64,9 @@ $mainBgColor:#fafafa;
         position: absolute;
         list-style: none;
         padding-top: 20px;
+        padding-bottom: 0px;
         z-index: 10;
         top:100%;
-        height: 152px;
         background-color: rgba(247,247,247,1);
         padding-right: 30px;
         &.popup1{
@@ -86,6 +86,7 @@ $mainBgColor:#fafafa;
                 line-height: 3em;
                 >img{
                     margin:0 auto;
+                    width: 6vw;
                 }
                 .name{
                     color: #333;
@@ -208,6 +209,8 @@ $mainBgColor:#fafafa;
 			margin-bottom: 2px;
 			display: flex;
 			justify-content: space-around;
+            padding-left: 0;
+            list-style: none;
 			li{
 				flex: 1;
 				background-color: #959394;
