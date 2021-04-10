@@ -4,7 +4,7 @@ dim rs
 Set rs = Server.CreateObject("ADODB.Recordset")    
 %>
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,40 +63,10 @@ Set rs = Server.CreateObject("ADODB.Recordset")
         <div class="info_bottom">
           <div class="info_left">
             <div class="info_item">
-              <div class="info_name">敷料事业部</div>
+              <div class="info_name">联系我们</div>
               <div class="info_line">
-                许宁（副总经理兼敷料事业部总监 全国）：188 52960 098<br/>
-                郝毛毛 (南大区经理 南区): 188 5296 0328<br/>
-                吴松 (负责人 东区): 188 5296 0086<br/>
-                赵鹏 （西大区经理 西区）：188 5296 0128<br/>
-                潘建华 （北大区销售经理 北区）：188 5296 0311
-              </div>
-            </div>
-            <div class="info_item">
-              <div class="info_name">医学日用品事业部</div>
-              <div class="info_line">
-                曹恒观（医学日用品事业部总监 全国）：185 1670 7008
-              </div>
-            </div>
-          </div>
-          <div class="info_mid">
-            <div class="info_item">
-              <div class="info_name">线下销售部（宠物）</div>
-              <div class="info_line">
-                马冉冉 （经理）：188 5296 0015 <br/>
-                王健宇 （副经理）：188 5296 0167
-              </div>
-            </div>
-            <div class="info_item">
-              <div class="info_name">器械事业部</div>
-              <div class="info_line">
-                陈笑宇（营销总监 全国）：188 5296 0010 
-              </div>
-            </div>
-            <div class="info_item">
-              <div class="info_name">国际事业部</div>
-              <div class="info_line">
-                蒋东飞（国际部负责人）：188 5296 2993
+                原海亮（研发部经理）：18852960219 <br/>
+                顾朋（化妆品系列项目经理）：18860881566
               </div>
             </div>
           </div>

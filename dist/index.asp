@@ -6,7 +6,7 @@ dim rs
 Set rs = Server.CreateObject("ADODB.Recordset")    
 %>
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,7 +51,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
         <div class="h3">华研医用科技</div>
         <p>公司与北京大学茹炳根教授团队进行的“产学研”合作项目“重组人巯基短肽的生产与产品开发”，已成功完成中试级别工艺验证。<br/>同时公司与中国药科大学、东南大学建立合作关系，成立了“中国药科大学-苏州汇涵（华研） 联合实验室”</p>
         <div class="more_btn">
-          <a href="intro.html">了解更多</a>
+          <a href="intro.asp">了解更多</a>
         </div>
       </div>
     </div>
@@ -61,6 +61,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
     <div class="container_zz">
       <div class="bs-example bs-example-tabs pro_show_list" data-example-id="togglable-tabs">
         <ul id="myTabs" class="pro_show_title" role="tablist">
+          <li class="active"><a href="#pro_show0" data-toggle="tab" aria-controls="pro_show0">抗氧化系列</a></li>
             <%
                  rs.open "select id,MasterType,TypePic,TypeDesc from  GswTblBaseInfo where FunctionId=5 and CustomerId=221 order by typeno",getconn(),1,1
                  i=1
@@ -71,7 +72,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
                     cname=""
                  end if
             %>
-          <li class="<%=cname%>"><a href="#pro_show<%=i%>" data-toggle="tab" aria-controls="pro_show<%=i%>"><%=rs("MasterType")%></a></li>
+          <li><a href="#pro_show<%=i%>" data-toggle="tab" aria-controls="pro_show<%=i%>"><%=rs("MasterType")%></a></li>
             <%
                 i=i+1
                 rs.MoveNext
@@ -81,6 +82,22 @@ Set rs = Server.CreateObject("ADODB.Recordset")
         
         </ul>
         <div id="myTabContent" class="tab-content pro_show_type">
+          <div class="tab-pane active type_box" id="pro_show0">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <div class="type_box_left">
+                  <a href="proDetail2.asp"><img src="./images/pro_show/1.jpg" class="img-responsive"></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">抗氧化系列</div>
+                  <p>苏州汇涵医用科技发展有限公司（简称“汇涵科技”），总部位于苏州常熟，营销中心位于上海。 公司始终致力于医疗器械的研发、生产和销售，产品涵盖生物医用材料、敷料、手术器械、医学日用品等四大领域，为患者提供创面全周期管理方案，为医生提供微创手术器械全系列产品，为宠物、儿童、女性、老人、家庭提供轻护理产品。汇涵科技嫁接资源，从患者、消费者需求角度设计、开发品质与价格平衡的产品。汇涵科技始终坚持的使命是</p>
+                  <img src="./images/pro_show/1/1.jpg" class="img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
             <%
                 rs.MoveFirst
                 i=1
@@ -91,10 +108,12 @@ Set rs = Server.CreateObject("ADODB.Recordset")
                     cname=""
                  end if
             %>
-          <div class="tab-pane <%=cname%> type_box" id="pro_show<%=i%>">
+          <div class="tab-pane type_box" id="pro_show<%=i%>">
             <div class="row">
               <div class="col-xs-12 col-sm-7">
-                <a href="proDetail.asp?id=<%=rs("id")%>"><img src="<%=rs("TypePic")%>" class="img-responsive"></a>
+                <div class="type_box_left">
+                  <a href="proDetail.asp?id=<%=rs("id")%>"><img src="<%=rs("TypePic")%>" class="img-responsive"></a>
+                </div>
               </div>
               <div class="col-xs-12 col-sm-5">
                 <div class="type_box_right">

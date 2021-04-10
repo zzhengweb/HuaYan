@@ -6,7 +6,7 @@ typeid=request("id")
 pid=request("pid")
 myid=0
 if clng(pid)>0 then
-     rs.open "select  id, ProName,  ProDesc, ProPic,ProRemark,ProTypeId from FROM  GswTblProInfo where id="&pid& "order by  ProNo",getconn(),1,1
+     rs.open "select  id, ProName,  ProDesc, ProPic,ProRemark,ProTypeId from GswTblProInfo where id="&pid& "order by  ProNo",getconn(),1,1
      if not rs.eof then
         myid=rs("id")
         myname=rs("ProName")
@@ -62,7 +62,7 @@ end if
     <div class="container">
       <div class="top_btn">
         <div class="btn_item">
-          <a href="proDetail2.html">抗氧化系列</a>
+          <a href="proDetail2.asp">抗氧化系列</a>
         </div>
          <%
                  rs.open "select id,MasterType,TypePic,TypeDesc from  GswTblBaseInfo where FunctionId=5 and CustomerId=221 order by typeno",getconn(),1,1
@@ -78,7 +78,7 @@ end if
                  end if
             %>
         <div class="btn_item <%=cname%>">
-          <a href="proDetail.asp?id=<%=rs("id")%>"><%=rs("MasterType")%>-<%=typeid%></a>
+          <a href="proDetail.asp?id=<%=rs("id")%>"><%=rs("MasterType")%></a>
         </div>
            <%
                 'response.Write "select top 1  id, ProName, ProDesc, ProPic,ProRemark from FROM  GswTblProInfo where  ProTypeId="&typeid&" order by  ProNo"

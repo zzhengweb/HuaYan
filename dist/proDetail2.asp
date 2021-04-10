@@ -47,23 +47,31 @@ Set rs = Server.CreateObject("ADODB.Recordset")
     <div class="container">
       <div class="top_btn">
         <div class="btn_item active">
-          <a href="proDetail2.html">抗氧化系列</a>
+          <a href="proDetail2.asp">抗氧化系列</a>
         </div>
+         <%
+                 rs.open "select id,MasterType,TypePic,TypeDesc from  GswTblBaseInfo where FunctionId=5 and CustomerId=221 order by typeno",getconn(),1,1
+                 do while not rs.eof 
+                 if clng(typeid)=0 then
+                    typeid=rs("id")
+                    'cname="active"
+                 end if
+                 if clng(typeid)=rs("id") then
+                      cname="active"   
+                 else
+                    cname=""
+                 end if
+            %>
         <div class="btn_item">
-          <a href="proDetail.html">酶制剂系列</a>
+          <a href="proDetail.asp?id=<%=rs("id")%>"><%=rs("MasterType")%></a>
         </div>
-        <div class="btn_item">
-          <a href="#">生物材料系列</a>
-        </div>
-        <div class="btn_item">
-          <a href="#">医药中间体系列</a>
-        </div>
-        <div class="btn_item">
-          <a href="#">化妆品系列</a>
-        </div>
-        <div class="btn_item">
-          <a href="#">技术服务</a>
-        </div>
+           <%
+                'response.Write "select top 1  id, ProName, ProDesc, ProPic,ProRemark from FROM  GswTblProInfo where  ProTypeId="&typeid&" order by  ProNo"
+                rs.MoveNext
+                loop
+                rs.Close
+                %>
+        
       </div>
     </div>
   </div>

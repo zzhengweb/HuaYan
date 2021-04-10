@@ -4,7 +4,7 @@ dim rs
 Set rs = Server.CreateObject("ADODB.Recordset")    
 %>
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,12 +88,12 @@ Set rs = Server.CreateObject("ADODB.Recordset")
         </div>
       </div>
       <div class="team_box2">
+        <div class="team_img">
+          <img src="./images/team/4.jpg">
+        </div>
         <div class="box2_content">
           <div class="title">公司研发团队</div>
           <p>苏州华研医用科技有限公司组建了一支专业的研发及生产团队，其中研发涉及分子生物学、微生物学、发酵工程、纯化工程、医药产品开发、无菌生产冻干等不同技术领域，团队主要成员工作经验均在5年以上，丰富的行业经验为产品的研发提供技术保障。</p>
-        </div>
-        <div class="team_img">
-          <img src="./images/team/4.jpg">
         </div>
       </div>
     </div>

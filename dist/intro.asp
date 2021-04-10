@@ -4,7 +4,7 @@ dim rs
 Set rs = Server.CreateObject("ADODB.Recordset")    
 %>
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,42 +52,48 @@ Set rs = Server.CreateObject("ADODB.Recordset")
   <div class="intro_wrapper">
     <div class="container">
       <p>苏州华研医用科技有限公司坐落在历史文化名城常熟，位于常熟市高新技术产业园达明路8号。公司依托生物工程平台，研发销售各种功能性蛋白、多肽原料，生物材料，并开发拓展生物原料下游终端产品，包括生物医药开发、工业酶制剂开发、医疗器械应用开发、消毒产品开发、保健食品开发及化妆品开发。</p>
-      <img src="./images/intro/show_img.jpg" class="img-responsive">
       <div class="num_list">
         <div class="num_item">
           <div>公司实力<span>strength</span></div>
         </div>
         <div class="num_item">
-          <div class="item_one">15000m<sup>3</sup></div>
+          <div class="item_one">15000㎡</div>
           <div class="item_two">生产及研发场地</div>
         </div>
         <div class="num_item">
-          <div class="item_one">3000m<sup>3</sup></div>
+          <div class="item_one">3000㎡</div>
           <div class="item_two">生物医药研发平台</div>
         </div>
         <div class="num_item">
-          <div class="item_one">1500m<sup>3</sup></div>
+          <div class="item_one">1500㎡</div>
           <div class="item_two">中试车间总面积</div>
         </div>
         <div class="num_item">
-          <div class="item_one">750m<sup>3</sup></div>
+          <div class="item_one">750㎡</div>
           <div class="item_two">十万级洁净车间</div>
         </div>
         <div class="num_item">
-          <div class="item_one">80m<sup>3</sup></div>
+          <div class="item_one">80㎡</div>
           <div class="item_two">万级洁净区</div>
         </div>
         <div class="num_item">
-          <div class="item_one">700m<sup>3</sup></div>
+          <div class="item_one">700㎡</div>
           <div class="item_two">原辅料及成品仓库</div>
         </div>
         <div class="num_item">
-          <div class="item_one">600m<sup>3</sup></div>
+          <div class="item_one">600㎡</div>
           <div class="item_two">配套实验室、检验室</div>
         </div>
       </div>
       <div class="intro_content">
-        <p>公司目前已建有的近3000m3的生物医药研发平台。中试车间总面积约1500㎡，其中十万级洁净车间约为750m2，万级洁净区面积约80m2。建有配套发酵小试实验室、纯化实验室、质量检验室约600m2，原辅料及成品仓库约700m2。研发平台同时配备了专业的研发设备，包括300L全自动发酵系统、高压均质机、密理博超滤系统、配备GE填料的分离纯化系统、无菌灌装机冻干机系统、安捷伦HPLC、赛默飞酶标仪等，先进的生产研发设备可以满足产品研发及中试放大需要。同时建设配套燃气锅炉房蒸汽系统、制水系统、冷却水系统等公用工程设备，为生产研发提供保障，公司二期工程建设有近15000m2的生产及研发场地，为后期产品品种扩大及规模化生产做好硬件准备，同时公司三期工程标准化生产基地筹建工作也正在快速推进。</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <p>公司目前已建有的近3000㎡的生物医药研发平台。中试车间总面积约1500㎡，其中十万级洁净车间约为750㎡，万级洁净区面积约80㎡。建有配套发酵小试实验室、纯化实验室、质量检验室约600㎡，原辅料及成品仓库约700㎡。研发平台同时配备了专业的研发设备，包括300L全自动发酵系统、高压均质机、密理博超滤系统、配备GE填料的分离纯化系统、无菌灌装机冻干机系统、安捷伦HPLC、赛默飞酶标仪等，先进的生产研发设备可以满足产品研发及中试放大需要。同时建设配套燃气锅炉房蒸汽系统、制水系统、冷却水系统等公用工程设备，为生产研发提供保障，公司二期工程建设有近15000㎡的生产及研发场地，为后期产品品种扩大及规模化生产做好硬件准备，同时公司三期工程标准化生产基地筹建工作也正在快速推进。</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <img src="./images/intro/2.jpg" class="img-responsive show_img">
+          </div>
+        </div>
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             <img src="./images/intro/1.jpg" class="img-responsive show_img">
