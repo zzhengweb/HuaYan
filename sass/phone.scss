@@ -241,6 +241,9 @@ a:hover,a{
             }
 			.type_box{
 				box-shadow: 0 .05rem .05rem rgba(0,0,0,.1);
+                .col-sm-7,.col-sm-5{
+                    width: 100% !important;
+                }
 			}
 			.show_type_title{
 				margin-top: 1rem;
@@ -296,6 +299,11 @@ a:hover,a{
     padding:1rem .5rem;
     .container_zz{
         padding:0 .75rem;
+        .row{
+            .col-sm-6{
+                width: 100% !important;
+            }
+        }
     }
     .footer_ph{
         font-size: .55rem;
