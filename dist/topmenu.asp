@@ -9,27 +9,27 @@
           <a href="index.asp"><img src="./images/logo.png" class="imgFull"></a>
         </div>
         <ul class="header_list">
-          <li><a href="index.asp">Home</a></li>
-          <li><a href="intro.asp">Abouts</a></li>
+          <li><a href="index.asp">首页</a></li>
+          <li><a href="intro.asp">企业简介</a></li>
           <li>
-            <a href="yanfa.asp">R & D Center</a>
+            <a href="yanfa.asp">研发中心</a>
             <ul class="popup popup1" id="popup">
               <li>
                 <a href="team.asp">
                   <img src="./images/yanjiu/1.png" class="img-responsive">
-                  <div class="name">R&D Team</div>
+                  <div class="name">研发团队</div>
                 </a>
               </li>
               <li>
                 <a href="yanfa.asp">
                   <img src="./images/yanjiu/2.png" class="img-responsive">
-                  <div class="name">R&D Platform</div>
+                  <div class="name">研发平台</div>
                 </a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="proDetail.asp">Products</a>
+            <a href="proDetail.asp">产品中心</a>
             <ul class="popup popup2" id="popup1">
               <li>
                 <a href="proDetail2.asp">
@@ -55,18 +55,18 @@
           
             </ul>
           </li>
-          <li><a href="news.asp">News</a></li>
-          <li><a href="contact.asp">Contact</a></li>
+          <li><a href="news.asp">新闻中心</a></li>
+          <li><a href="contact.asp">联系我们</a></li>
           <li class="visible-xs">
-            <a href="../index.asp">
-              中文
+            <a href="./en/index.asp">
+              English
             </a>
           </li>
         </ul>
         <div class="change_lang hidden_xs">
-          <a href="../index.asp" class="border_en">
+          <a href="./en" class="border_en">
             <img src="./images/en_logo.jpg">
-            <span>中文</span>
+            <span>English</span>
           </a>
         </div>
       </div>

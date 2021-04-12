@@ -44,23 +44,24 @@ Set rs = Server.CreateObject("ADODB.Recordset")
       <div class="swiper-pagination"></div>
     </div>
   </div>
-  <!-- Home简介 -->
+  <!-- 首页简介 -->
   <div class="home_intro">
     <div class="container_zz">
       <div class="text-center">
-        <div class="h3">Suzhou Huayan Medical Technology Co., Ltd.</div>
-        <p>Suzhou Huayan Medical Technology Co., Ltd. is located in Changshu, a famous historical and cultural city, at No. 8 Daming Road, High-tech Industrial Park, Changshu City. Relying on the bioengineering platform, the company develops and sells various functional proteins, peptide raw materials, biological materials, and develops the downstream end products of biological raw materials, including bio-medicine development, industrial enzymes development, medical device application development, disinfection product development, and health food Development and cosmetics development.</p>
+        <div class="h3">华研医用科技</div>
+        <p>公司与北京大学茹炳根教授团队进行的“产学研”合作项目“重组人巯基短肽的生产与产品开发”，已成功完成中试级别工艺验证。<br/>同时公司与中国药科大学、东南大学建立合作关系，成立了“中国药科大学-苏州汇涵（华研） 联合实验室”</p>
         <div class="more_btn">
-          <a href="intro.asp">More</a>
+          <a href="intro.asp">了解更多</a>
         </div>
       </div>
     </div>
   </div>
-  <!-- Home产品展示 -->
+  <!-- 首页产品展示 -->
   <div class="pro_show">
     <div class="container_zz">
       <div class="bs-example bs-example-tabs pro_show_list" data-example-id="togglable-tabs">
         <ul id="myTabs" class="pro_show_title" role="tablist">
+          <li class="active"><a href="#pro_show0" data-toggle="tab" aria-controls="pro_show0">抗氧化系列</a></li>
             <%
                  rs.open "select id,MasterType,TypePic,TypeDesc from  GswTblBaseInfo where FunctionId=5 and CustomerId=221 order by typeno",getconn(),1,1
                  i=1
@@ -71,7 +72,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
                     cname=""
                  end if
             %>
-          <li class="<%=cname%>"><a href="#pro_show<%=i%>" data-toggle="tab" aria-controls="pro_show<%=i%>"><%=rs("MasterType")%></a></li>
+          <li><a href="#pro_show<%=i%>" data-toggle="tab" aria-controls="pro_show<%=i%>"><%=rs("MasterType")%></a></li>
             <%
                 i=i+1
                 rs.MoveNext
@@ -81,6 +82,22 @@ Set rs = Server.CreateObject("ADODB.Recordset")
         
         </ul>
         <div id="myTabContent" class="tab-content pro_show_type">
+          <div class="tab-pane active type_box" id="pro_show0">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <div class="type_box_left">
+                  <a href="proDetail2.asp"><img src="./images/pro_show/1.jpg" class="img-responsive"></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">抗氧化系列</div>
+                  <p>苏州汇涵医用科技发展有限公司（简称“汇涵科技”），总部位于苏州常熟，营销中心位于上海。 公司始终致力于医疗器械的研发、生产和销售，产品涵盖生物医用材料、敷料、手术器械、医学日用品等四大领域，为患者提供创面全周期管理方案，为医生提供微创手术器械全系列产品，为宠物、儿童、女性、老人、家庭提供轻护理产品。汇涵科技嫁接资源，从患者、消费者需求角度设计、开发品质与价格平衡的产品。汇涵科技始终坚持的使命是</p>
+                  <img src="./images/pro_show/1/1.jpg" class="img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
             <%
                 rs.MoveFirst
                 i=1
@@ -91,7 +108,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
                     cname=""
                  end if
             %>
-          <div class="tab-pane <%=cname%> type_box" id="pro_show<%=i%>">
+          <div class="tab-pane type_box" id="pro_show<%=i%>">
             <div class="row">
               <div class="col-xs-12 col-sm-7">
                 <div class="type_box_left">
@@ -117,29 +134,29 @@ Set rs = Server.CreateObject("ADODB.Recordset")
       </div>
     </div>
   </div>
-  <!-- Home页面地图展示 -->
+  <!-- 首页页面地图展示 -->
   <div class="home_show">
     <div class="show_item">
       <img src="./images/home/1.jpg" class="item_img">
     </div>
     <div class="show_item item_info item_green">
-      <div class="item_title">Abouts</div>
-      <div class="item_content">Suzhou Huayan Medical Technology Co., Ltd. is located in Changshu, a famous historical and cultural city, at No. 8 Daming Road, High-tech Industrial Park, Changshu City...</div>
-      <div class="item_more"><a href="intro.asp">More</a></div>
+      <div class="item_title">公司介绍</div>
+      <div class="item_content">苏州华研医用科技有限公司坐落在历史文化名城常熟，位于常熟市高新技术产业园达明路8号。公司依托生物...</div>
+      <div class="item_more"><a href="intro.asp">了解更多</a></div>
     </div>
     <div class="show_item">
       <img src="./images/home/2.jpg" class="item_img">
     </div>
     <div class="show_item item_info item_blue">
-      <div class="item_title">R & D Center</div>
-      <div class="item_content">Continue to create more and more changes and help for employees, customers, environment, vulnerable groups, and jointly open a better future...</div>
-      <div class="item_more"><a href="yanfa.asp">More</a></div>
+      <div class="item_title">研发中心</div>
+      <div class="item_content">不断的为员工、客户、环境、弱势群体创造越来越多的改变与帮助，共同开启更好的未来</div>
+      <div class="item_more"><a href="yanfa.asp">了解更多</a></div>
     </div>
     <div class="show_item">
       <img src="./images/home/3.jpg" class="item_img">
     </div>
     <div class="show_item item_info item_grey">
-      <div class="item_title">News</div>
+      <div class="item_title">新闻中心</div>
       <div class="item_news">
           <%
               rs.open "select top 2 id, CreateDate, ContentTitle FROM GswTblContent where CustomerId=221 and FunctionId=1 order by CreateDate desc",getconn(),1,1
@@ -153,7 +170,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
            %>
         
       </div>
-      <div class="item_more"><a href="news.asp">More</a></div>
+      <div class="item_more"><a href="news.asp">了解更多</a></div>
     </div>
   </div>
   <footer class="footer">
@@ -166,24 +183,24 @@ Set rs = Server.CreateObject("ADODB.Recordset")
             </div>
             <div class="col-xs-12 col-lg-9">
               <div class="footer_ph">
-                <img src="./images/footer_ph.jpg">Tel：0512-80655555
+                <img src="./images/footer_ph.jpg">公司电话：0512-80655555
               </div>
-              <div class="footer_info">Add.：常熟经济技术开发区高新技术产业园达明路8号</div>
-              <div class="footer_info">P.C.：2150000      Fax：0512-52862685      E-mail：info@hvha.cn</div>
+              <div class="footer_info">公司地址：常熟经济技术开发区高新技术产业园达明路8号</div>
+              <div class="footer_info">邮政编码：2150000      传真：0512-52862685      邮箱：info@hvha.cn</div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
           <div class="footer_ph">
-            Quick Access
+            快捷入口
           </div>
           <div class="footer_nav">
-            <div class="nav_item"><a href="index.asp">Home</a></div>
-            <div class="nav_item"><a href="intro.asp">Abouts</a></div>
-            <div class="nav_item"><a href="yanfa.asp">R & D Center</a></div>
-            <div class="nav_item"><a href="proDetail.asp">Products</a></div>
-            <div class="nav_item"><a href="news.asp">News</a></div>
-            <div class="nav_item"><a href="contact.asp">Contact</a></div>
+            <div class="nav_item"><a href="index.asp">首页</a></div>
+            <div class="nav_item"><a href="intro.asp">企业简介</a></div>
+            <div class="nav_item"><a href="yanfa.asp">研发中心</a></div>
+            <div class="nav_item"><a href="proDetail.asp">产品中心</a></div>
+            <div class="nav_item"><a href="news.asp">新闻中心</a></div>
+            <div class="nav_item"><a href="contact.asp">联系我们</a></div>
           </div>
         </div>
       </div>

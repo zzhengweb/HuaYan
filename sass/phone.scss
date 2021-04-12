@@ -236,6 +236,9 @@ a:hover,a{
                     margin-bottom: .375rem;
                 }
 			}
+            .type_box_left{
+                padding-right: 0;
+            }
 			.type_box{
 				box-shadow: 0 .05rem .05rem rgba(0,0,0,.1);
                 .col-sm-7,.col-sm-5{
@@ -560,9 +563,6 @@ a:hover,a{
                 td{
                     padding-left: .75rem;
                 }
-                :nth-child(2){
-                    padding-right: .375rem;
-                }
             }
         }
     }
@@ -591,9 +591,6 @@ a:hover,a{
                 td{
                     padding-left: .75rem;
                 }
-                :nth-child(2){
-                    padding-right: .375rem;
-                }
             }
         }
         p{
@@ -617,6 +614,7 @@ a:hover,a{
                     }
                 }
                 .item_title{
+                    width: 3.75rem;
                     font-size: .4rem;
                 }
             }
