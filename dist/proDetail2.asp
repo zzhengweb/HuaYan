@@ -47,23 +47,31 @@ Set rs = Server.CreateObject("ADODB.Recordset")
     <div class="container">
       <div class="top_btn">
         <div class="btn_item active">
-          <a href="proDetail2.html">抗氧化系列</a>
+          <a href="proDetail2.asp">抗氧化系列</a>
         </div>
+         <%
+                 rs.open "select id,MasterType,TypePic,TypeDesc from  GswTblBaseInfo where FunctionId=5 and CustomerId=221 order by typeno",getconn(),1,1
+                 do while not rs.eof 
+                 if clng(typeid)=0 then
+                    typeid=rs("id")
+                    'cname="active"
+                 end if
+                 if clng(typeid)=rs("id") then
+                      cname="active"   
+                 else
+                    cname=""
+                 end if
+            %>
         <div class="btn_item">
-          <a href="proDetail.html">酶制剂系列</a>
+          <a href="proDetail.asp?id=<%=rs("id")%>"><%=rs("MasterType")%></a>
         </div>
-        <div class="btn_item">
-          <a href="#">生物材料系列</a>
-        </div>
-        <div class="btn_item">
-          <a href="#">医药中间体系列</a>
-        </div>
-        <div class="btn_item">
-          <a href="#">化妆品系列</a>
-        </div>
-        <div class="btn_item">
-          <a href="#">技术服务</a>
-        </div>
+           <%
+                'response.Write "select top 1  id, ProName, ProDesc, ProPic,ProRemark from FROM  GswTblProInfo where  ProTypeId="&typeid&" order by  ProNo"
+                rs.MoveNext
+                loop
+                rs.Close
+                %>
+        
       </div>
     </div>
   </div>
@@ -247,24 +255,24 @@ Set rs = Server.CreateObject("ADODB.Recordset")
             </div>
             <div class="col-xs-12 col-lg-9">
               <div class="footer_ph">
-                <img src="./images/footer_ph.jpg">公司电话：0512-80655555
+                <img src="./images/footer_ph.jpg">Tel：0512-80655555
               </div>
-              <div class="footer_info">公司地址：常熟经济技术开发区高新技术产业园达明路8号</div>
-              <div class="footer_info">邮政编码：2150000      传真：0512-52862685      邮箱：info@hvha.cn</div>
+              <div class="footer_info">Add.：常熟经济技术开发区高新技术产业园达明路8号</div>
+              <div class="footer_info">P.C.：2150000      Fax：0512-52862685      E-mail：info@hvha.cn</div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
           <div class="footer_ph">
-            快捷入口
+            Quick Access
           </div>
           <div class="footer_nav">
-            <div class="nav_item"><a href="index.asp">首页</a></div>
-            <div class="nav_item"><a href="intro.asp">企业简介</a></div>
-            <div class="nav_item"><a href="yanfa.asp">研发中心</a></div>
-            <div class="nav_item"><a href="proDetail.asp">产品中心</a></div>
-            <div class="nav_item"><a href="news.asp">新闻中心</a></div>
-            <div class="nav_item"><a href="contact.asp">联系我们</a></div>
+            <div class="nav_item"><a href="index.asp">Home</a></div>
+            <div class="nav_item"><a href="intro.asp">Abouts</a></div>
+            <div class="nav_item"><a href="yanfa.asp">R & D Center</a></div>
+            <div class="nav_item"><a href="proDetail.asp">Products</a></div>
+            <div class="nav_item"><a href="news.asp">News</a></div>
+            <div class="nav_item"><a href="contact.asp">Contact</a></div>
           </div>
         </div>
       </div>

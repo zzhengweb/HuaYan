@@ -581,7 +581,7 @@ $mainBgColor:#fafafa;
     }
 }
 
-// 新闻中心
+// News
 .news_wrapper{
     background-color: $mainBgColor;
     padding-bottom: 68px;
@@ -678,7 +678,7 @@ $mainBgColor:#fafafa;
 
 
 
-//联系我们
+//Contact
 .contact_wrapper{
     background-color: $mainBgColor;
     .map{
@@ -718,7 +718,7 @@ $mainBgColor:#fafafa;
         }
     }
 }
-// 研发团队
+// R&DTeam
 .team_wrapper{
     background-color: $mainBgColor;
     .container_zz{
@@ -729,9 +729,6 @@ $mainBgColor:#fafafa;
         display: flex;
         background-color: #f5f5f5;
         margin-bottom: 46px;
-        .team_img{
-            background-color: $mainColor;
-        }
         .box1_content{
             flex: 1;
             width: 200px;
@@ -750,6 +747,7 @@ $mainBgColor:#fafafa;
     }
     .team_box2{
         display: flex;
+        flex-direction: column;
         margin-bottom: 80px;
         .team_img{
             background-color: $mainBgColor;
@@ -761,8 +759,8 @@ $mainBgColor:#fafafa;
         .box2_content{
             background-color: $mainColor;
             flex: 1;
-            width: 200px;
-            padding:20px 20px 0 20px;
+            width: 100%;
+            padding:40px;
             p{
                 font-size: 16px;
                 color: #ffffff;

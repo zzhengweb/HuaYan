@@ -4,7 +4,7 @@ dim rs
 Set rs = Server.CreateObject("ADODB.Recordset")    
 %>
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +45,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
   </div>
   <!-- 子页标题 -->
   <div class="inner_title text-center">
-    <div class="title_cn">研发平台</div>
+    <div class="title_cn">R&D Platform</div>
     <div class="title_en">R & D platform</div>
   </div>
   <!-- 研发 -->
@@ -54,31 +54,31 @@ Set rs = Server.CreateObject("ADODB.Recordset")
       <div class="top_list">
         <div class="top_item">
           <img src="./images/yanjiu/top/2.jpg" class="img-responsive"/>
-          <div class="item_title">生物工程平台-研发实验室</div>
+          <div class="item_title">Bioengineering platform</div>
           <div class="hidden_info">
-            <div class="info_title">生物工程平台-研发实验室</div>
-            <div class="info_content">公司研发实验室建有专业的发酵实验室、分离纯化实验室、分析检测实验室等小试实验室，配备有小试发酵系统、蛋白纯化系统、HPLC检测系统、紫外分光光度计、酶标仪、冻干机等现代化实验设备。</div>
+            <div class="info_title">Bioengineering platform</div>
+            <div class="info_content">The platform contains professional fermentation laboratory, separation and purification laboratory, analysis and detection laboratory and other small test laboratories, equipped with small test fermentation system, protein purification system, HPLC detection system, UV spectrophotometer, ELIASA, lyophilizer ,etc.</div>
           </div>
         </div>
         <div class="top_item">
           <img src="./images/yanjiu/top/2.jpg" class="img-responsive"/>
-          <div class="item_title">发酵小试实验室</div>
+          <div class="item_title">Figure 1. Fermentation Laboratory</div>
         </div>
         <div class="top_item">
           <img src="./images/yanjiu/top/3.jpg" class="img-responsive"/>
-          <div class="item_title">分离纯化实验室</div>
+          <div class="item_title">Figure 2. Separation and Purification Laboratory</div>
         </div>
         <div class="top_item">
           <img src="./images/yanjiu/top/4.jpg" class="img-responsive"/>
-          <div class="item_title">分析检测实验室</div>
+          <div class="item_title">Figure 3. Analysis and Testing Laboratory</div>
         </div>
         <div class="top_item">
           <img src="./images/yanjiu/top/5.jpg" class="img-responsive"/>
-          <div class="item_title">分析检测实验室</div>
+          <div class="item_title">Figure 4.  Analysis and Testing Laboratory</div>
         </div>
         <div class="top_item">
           <img src="./images/yanjiu/top/6.jpg" class="img-responsive"/>
-          <div class="item_title">冻干烘干设备间</div>
+          <div class="item_title">Figure 5.  Freeze-drying and Drying Equipment Room</div>
         </div>
       </div>
     </div>
@@ -90,102 +90,102 @@ Set rs = Server.CreateObject("ADODB.Recordset")
         <div class="tab-content show_left" id="myTabContent">
           <div class="active tab-pane" id="pro_show1">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间</div>
-              <p>公司生物工程中试生产车间面积约1500m<sup>3</sup>，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc. </p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/1.jpg" class="img-responsive">
-              <div class="img_title">50L-300L发酵系统</div>
+              <div class="img_title">Figure 6. 50L-300L Automatic Fermentation System</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show2">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间1</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop1</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/2.jpg" class="img-responsive">
-              <div class="img_title">高压均质细胞破碎机</div>
+              <div class="img_title">Figure 7. High Pressure Homogenizer</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show3">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间3</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop3</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/3.jpg" class="img-responsive">
-              <div class="img_title">中试级超滤系统</div>
+              <div class="img_title">Figure 8. Pilot scale ultrafiltration system</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show4">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间4</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop4</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/4.jpg" class="img-responsive">
-              <div class="img_title">湿热灭菌柜</div>
+              <div class="img_title">Figure 9. Humid heat sterilization cabinet</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show5">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间5</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop5</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/5.jpg" class="img-responsive">
-              <div class="img_title">无菌灌装设备</div>
+              <div class="img_title">Figure 10. Aseptic Filling Equipment</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show6">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间6</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop6</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/6.jpg" class="img-responsive">
-              <div class="img_title">无菌冻干设备</div>
+              <div class="img_title">Figure 11. Sterile lyophilized drying equipment</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show7">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间7</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop7</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/7.jpg" class="img-responsive">
-              <div class="img_title">无菌灌装生产线</div>
+              <div class="img_title">Figure 12. Aseptic filling line</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show8">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间8</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop8</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/8.jpg" class="img-responsive">
-              <div class="img_title">产品轧盖设备</div>
+              <div class="img_title">Figure 13. Rolling machine</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show9">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间9</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop9</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/9.jpg" class="img-responsive">
-              <div class="img_title">车间制水系统</div>
+              <div class="img_title">Figure 14. Water system</div>
             </div>
           </div>
           <div class="tab-pane" id="pro_show10">
             <div class="left_info">
-              <div class="title">生物工程平台-中试生产车间10</div>
-              <p>公司生物工程中试生产车间面积约1500m3，根据不同工艺段可划分为一般区域、十万级区域、万级区域及局部的百级区的洁净车间，车间配置了先进的中试生产设备，包括50L-300L全自动发酵系统、离心设备、高压均质细胞破碎设备、中试级分离纯化设备、无菌灌装及冻干生产线等生产设备。</p>
+              <div class="title">Pilot-scale production workshop10</div>
+              <p>The Pilot-scale production workshop covers an area of about 1500 m3, which can be divided into general clean area;105 degree clean area,10000 degree clean area,100 degree clean area, according to different process .The workshop is equipped with advanced testing equipment, including 50L - 300 L automatic fermentation system, centrifugal equipment, high pressure homogenizer, aseptic filling and freeze-drying production line ,etc.</p>
             </div>
             <div class="show_img">
               <img src="./images/yanjiu/bottom/10.jpg" class="img-responsive">
-              <div class="img_title">公用工程设备</div>
+              <div class="img_title">Figure 15. Utility equipment</div>
             </div>
           </div>
         </div>
@@ -193,61 +193,61 @@ Set rs = Server.CreateObject("ADODB.Recordset")
           <li class="show_item active">
             <a href="#pro_show1" data-toggle="tab" aria-controls="pro_show1">
               <img src="./images/yanjiu/bottom/small/1.jpg" class="img-responsive">
-              <div class="item_title">50L-300L发酵系统</div>
+              <div class="item_title">Figure 6. 50L-300L Automatic Fermentation System</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show2" data-toggle="tab" aria-controls="pro_show2">
               <img src="./images/yanjiu/bottom/small/2.jpg" class="img-responsive">
-              <div class="item_title">高压均质细胞破碎机</div>
+              <div class="item_title">Figure 7. High Pressure Homogenizer</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show3" data-toggle="tab" aria-controls="pro_show3">
               <img src="./images/yanjiu/bottom/small/3.jpg" class="img-responsive">
-              <div class="item_title">中试级超滤系统</div>
+              <div class="item_title">Figure 8. Pilot scale ultrafiltration system</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show4" data-toggle="tab" aria-controls="pro_show4">
               <img src="./images/yanjiu/bottom/small/4.jpg" class="img-responsive">
-              <div class="item_title">湿热灭菌柜</div>
+              <div class="item_title">Figure 9. Humid heat sterilization cabinet</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show5" data-toggle="tab" aria-controls="pro_show5">
               <img src="./images/yanjiu/bottom/small/5.jpg" class="img-responsive">
-              <div class="item_title">无菌灌装设备</div>
+              <div class="item_title">Figure 10. Aseptic Filling Equipment</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show6" data-toggle="tab" aria-controls="pro_show6">
               <img src="./images/yanjiu/bottom/small/6.jpg" class="img-responsive">
-              <div class="item_title">无菌冻干设备</div>
+              <div class="item_title">Figure 11. Sterile lyophilized drying equipment</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show7" data-toggle="tab" aria-controls="pro_show7">
               <img src="./images/yanjiu/bottom/small/7.jpg" class="img-responsive">
-              <div class="item_title">无菌灌装生产线</div>
+              <div class="item_title">Figure 12. Aseptic filling line</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show8" data-toggle="tab" aria-controls="pro_show8">
               <img src="./images/yanjiu/bottom/small/8.jpg" class="img-responsive">
-              <div class="item_title">产品轧盖设备</div>
+              <div class="item_title">Figure 13. Rolling machine</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show9" data-toggle="tab" aria-controls="pro_show9">
               <img src="./images/yanjiu/bottom/small/9.jpg" class="img-responsive">
-              <div class="item_title">车间制水系统</div>
+              <div class="item_title">Figure 14. Water system</div>
             </a>
           </li>
           <li class="show_item">
             <a href="#pro_show10" data-toggle="tab" aria-controls="pro_show10">
               <img src="./images/yanjiu/bottom/small/10.jpg" class="img-responsive">
-              <div class="item_title">公用工程设备</div>
+              <div class="item_title">Figure 15. Utility equipment</div>
             </a>
           </li>
         </ul>
@@ -264,24 +264,24 @@ Set rs = Server.CreateObject("ADODB.Recordset")
             </div>
             <div class="col-xs-12 col-lg-9">
               <div class="footer_ph">
-                <img src="./images/footer_ph.jpg">公司电话：0512-80655555
+                <img src="./images/footer_ph.jpg">Tel：0512-80655555
               </div>
-              <div class="footer_info">公司地址：常熟经济技术开发区高新技术产业园达明路8号</div>
-              <div class="footer_info">邮政编码：2150000      传真：0512-52862685      邮箱：info@hvha.cn</div>
+              <div class="footer_info">Add.：常熟经济技术开发区高新技术产业园达明路8号</div>
+              <div class="footer_info">P.C.：2150000      Fax：0512-52862685      E-mail：info@hvha.cn</div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
           <div class="footer_ph">
-            快捷入口
+            Quick Access
           </div>
           <div class="footer_nav">
-           <div class="nav_item"><a href="index.asp">首页</a></div>
-            <div class="nav_item"><a href="intro.asp">企业简介</a></div>
-            <div class="nav_item"><a href="yanfa.asp">研发中心</a></div>
-            <div class="nav_item"><a href="proDetail.asp">产品中心</a></div>
-            <div class="nav_item"><a href="news.asp">新闻中心</a></div>
-            <div class="nav_item"><a href="contact.asp">联系我们</a></div>
+           <div class="nav_item"><a href="index.asp">Home</a></div>
+            <div class="nav_item"><a href="intro.asp">Abouts</a></div>
+            <div class="nav_item"><a href="yanfa.asp">R & D Center</a></div>
+            <div class="nav_item"><a href="proDetail.asp">Products</a></div>
+            <div class="nav_item"><a href="news.asp">News</a></div>
+            <div class="nav_item"><a href="contact.asp">Contact</a></div>
           </div>
         </div>
       </div>

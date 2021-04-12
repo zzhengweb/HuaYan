@@ -262,12 +262,13 @@ a:hover,a{
         &.item_info{
             padding:0 .6rem;
             .item_title{
-                font-size: .75rem;
+                font-size: .60rem;
                 margin-bottom: .3rem;
             }
             .item_content{
                 font-size: .5rem;
-                margin-bottom: .6rem;
+                line-height: 1.4em;
+                margin-bottom: .3rem;
             }
             .item_more{
                 width: 2.4rem;
@@ -384,17 +385,23 @@ a:hover,a{
         .top_item{
             width: calc( (100% - .5rem) / 2 );
             margin-bottom: .25rem;
+            height: 6rem;
+            >img{
+                height: 100%;
+            }
             .item_title{
                 font-size: .4rem;
             }
             .hidden_info{
+                padding: .45rem 0;
                 .info_title{
                     font-size: .5rem;
-                    margin-bottom: .25rem;
+                    margin-bottom: .15rem;
                 }
                 .info_content{
                     padding:0 .45rem;
                     font-size: .4rem;
+                    line-height: 1.4em;
                 }
             }
         }
@@ -436,7 +443,7 @@ a:hover,a{
         }
     }
 }
-// 研发团队
+// R&DTeam
 .team_wrapper{
     .team_box1{
         margin-bottom: 1rem;
@@ -617,7 +624,7 @@ a:hover,a{
     }
 }
 
-// 新闻中心
+// News
 .news_wrapper{
     padding-bottom: 1rem;
     .news_bg{
@@ -677,7 +684,7 @@ a:hover,a{
     }
 }
 
-//联系我们
+//Contact
 .contact_wrapper{
     .map{
         height: 9.6rem;

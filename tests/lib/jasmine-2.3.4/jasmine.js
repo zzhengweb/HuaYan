@@ -2573,12 +2573,12 @@ getJasmineRequireObj().matchersUtil = function(j$) {
         isNot = args[1],
         actual = args[2],
         expected = args.slice(3),
-        englishyPredicate = matcherName.replace(/[A-Z]/g, function(s) { return ' ' + s.toLowerCase(); });
+        中文yPredicate = matcherName.replace(/[A-Z]/g, function(s) { return ' ' + s.toLowerCase(); });
 
       var message = 'Expected ' +
         j$.pp(actual) +
         (isNot ? ' not ' : ' ') +
-        englishyPredicate;
+        中文yPredicate;
 
       if (expected.length > 0) {
         for (var i = 0; i < expected.length; i++) {

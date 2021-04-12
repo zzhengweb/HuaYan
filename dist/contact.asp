@@ -4,7 +4,7 @@ dim rs
 Set rs = Server.CreateObject("ADODB.Recordset")    
 %>
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-cn" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,17 +48,17 @@ Set rs = Server.CreateObject("ADODB.Recordset")
   </div>
   <!-- 子页标题 -->
   <div class="inner_title text-center">
-    <div class="title_cn">联系我们</div>
+    <div class="title_cn">Contact</div>
     <div class="title_en">contact us</div>
   </div>
-  <!-- 新闻中心 -->
+  <!-- News -->
   <div class="contact_wrapper">
     <div class="container">
       <div class="map" id="map_box"></div>
       <div class="contact_info">
         <div class="info_top">
-          <div class="top_line">公司地址：常熟经济技术开发区高新技术产业园达明路8号</div>
-          <div class="top_line"><span>公司电话：0512-80655555</span><span>邮政编码：2150000</span><span>传真：0512-52862685</span><span>邮箱：info@hvha.cn</span></div>
+          <div class="top_line">Add.：常熟经济技术开发区高新技术产业园达明路8号</div>
+          <div class="top_line"><span>Tel：0512-80655555</span><span>P.C.：2150000</span><span>Fax：0512-52862685</span><span>E-mail：info@hvha.cn</span></div>
         </div>
         <div class="info_bottom">
           <div class="info_left">
@@ -114,24 +114,24 @@ Set rs = Server.CreateObject("ADODB.Recordset")
             </div>
             <div class="col-xs-12 col-lg-9">
               <div class="footer_ph">
-                <img src="./images/footer_ph.jpg">公司电话：0512-80655555
+                <img src="./images/footer_ph.jpg">Tel：0512-80655555
               </div>
-              <div class="footer_info">公司地址：常熟经济技术开发区高新技术产业园达明路8号</div>
-              <div class="footer_info">邮政编码：2150000      传真：0512-52862685      邮箱：info@hvha.cn</div>
+              <div class="footer_info">Add.：常熟经济技术开发区高新技术产业园达明路8号</div>
+              <div class="footer_info">P.C.：2150000      Fax：0512-52862685      E-mail：info@hvha.cn</div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
           <div class="footer_ph">
-            快捷入口
+            Quick Access
           </div>
           <div class="footer_nav">
-            <div class="nav_item"><a href="index.asp">首页</a></div>
-            <div class="nav_item"><a href="intro.asp">企业简介</a></div>
-            <div class="nav_item"><a href="yanfa.asp">研发中心</a></div>
-            <div class="nav_item"><a href="proDetail.asp">产品中心</a></div>
-            <div class="nav_item"><a href="news.asp">新闻中心</a></div>
-            <div class="nav_item"><a href="contact.asp">联系我们</a></div>
+            <div class="nav_item"><a href="index.asp">Home</a></div>
+            <div class="nav_item"><a href="intro.asp">Abouts</a></div>
+            <div class="nav_item"><a href="yanfa.asp">R & D Center</a></div>
+            <div class="nav_item"><a href="proDetail.asp">Products</a></div>
+            <div class="nav_item"><a href="news.asp">News</a></div>
+            <div class="nav_item"><a href="contact.asp">Contact</a></div>
           </div>
         </div>
       </div>
@@ -231,7 +231,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
 
     function addMapOverlay() {
         // 百度地图API功能
-        var content = '<div style="margin:0;line-height:20px;padding:2px;">' + '公司地址：常熟经济技术开发区高新技术产业园达明路8号<br/>公司电话：0512-80655555<br/>传真：0512-52292707<br/>邮箱：info@hvha.cn' + '</div>';
+        var content = '<div style="margin:0;line-height:20px;padding:2px;">' + 'Add.：常熟经济技术开发区高新技术产业园达明路8号<br/>Tel：0512-80655555<br/>Fax：0512-52292707<br/>E-mail：info@hvha.cn' + '</div>';
         var icon = new BMap.Icon("./images/logo_map.png",new BMap.Size(70,67),{
           anchor:new BMap.Size(10,0)
         });
