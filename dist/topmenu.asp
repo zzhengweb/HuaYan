@@ -57,7 +57,7 @@
           </li>
           <li><a href="news.asp">新闻中心</a></li>
           <li><a href="contact.asp">联系我们</a></li>
-          <li class="visible-xs">
+          <li class="visible_xs">
             <a href="./en/index.asp">
               English
             </a>

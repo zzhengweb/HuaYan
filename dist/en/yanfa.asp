@@ -46,7 +46,6 @@ Set rs = Server.CreateObject("ADODB.Recordset")
   <!-- 子页标题 -->
   <div class="inner_title text-center">
     <div class="title_cn">R&D Platform</div>
-    <div class="title_en">R & D platform</div>
   </div>
   <!-- 研发 -->
   <div class="yanfa_wrapper">

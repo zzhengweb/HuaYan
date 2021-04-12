@@ -120,7 +120,7 @@ end if
             if not rs.eof then
         %>
       <div class="proShow_list">
-        <div class="title">同系列产品</div>
+        <div class="title">Others</div>
         <div class="list_box">
             <%
                 do while not rs.eof 

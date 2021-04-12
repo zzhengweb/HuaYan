@@ -65,8 +65,8 @@ Set rs = Server.CreateObject("ADODB.Recordset")
             <div class="info_item">
               <div class="info_name">Contact Us</div>
               <div class="info_line">
-                原海亮（研发部经理）：18852960219 <br/>
-                顾朋（化妆品系列项目经理）：18860881566
+                Manager Yuan（R&D department）：18852960219 <br/>
+                Manager Gu（Cosmetics）：18860881566
               </div>
             </div>
           </div>

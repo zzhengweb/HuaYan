@@ -44,8 +44,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
   </div>
   <!-- 子页标题 -->
   <div class="inner_title text-center">
-    <div class="title_cn">R&DTeam</div>
-    <div class="title_en">R & D Center</div>
+    <div class="title_cn">R & D Team</div>
   </div>
   <!-- R&DTeam -->
   <div class="team_wrapper">

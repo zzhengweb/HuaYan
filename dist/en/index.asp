@@ -61,6 +61,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
     <div class="container_zz">
       <div class="bs-example bs-example-tabs pro_show_list" data-example-id="togglable-tabs">
         <ul id="myTabs" class="pro_show_title" role="tablist">
+          <li class="active"><a href="#pro_show0" data-toggle="tab" aria-controls="pro_show0">Antioxidants</a></li>
             <%
                  rs.open "select id,MasterType,TypePic,TypeDesc from  GswTblBaseInfo where FunctionId=39 and CustomerId=221 order by typeno",getconn(),1,1
                  i=1
@@ -71,7 +72,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
                     cname=""
                  end if
             %>
-          <li class="<%=cname%>"><a href="#pro_show<%=i%>" data-toggle="tab" aria-controls="pro_show<%=i%>"><%=rs("MasterType")%></a></li>
+          <li><a href="#pro_show<%=i%>" data-toggle="tab" aria-controls="pro_show<%=i%>"><%=rs("MasterType")%></a></li>
             <%
                 i=i+1
                 rs.MoveNext
@@ -81,6 +82,22 @@ Set rs = Server.CreateObject("ADODB.Recordset")
         
         </ul>
         <div id="myTabContent" class="tab-content pro_show_type">
+          <div class="tab-pane active type_box" id="pro_show0">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <div class="type_box_left">
+                  <a href="proDetail2.asp"><img src="./images/pro_show/1.jpg" class="img-responsive"></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <div class="type_box_right">
+                  <div class="show_type_title">Antioxidants</div>
+                  <p>The metallothioneins (MTs) are a family of small, highly conserved proteins with the specific capacity to bind metal ions. Mammalian MTs, typically 61 to 68 amino acid residues in length, with a molecular weight of 6000-7000 Daltons, contain 20 invariant cysteine residues that form two distinct metal-binding domains, without disulfide bonds, aromatic amino acids, and histidines. Metallothioneins contain two independent domains, namely α domain and β domain, both of which have independent biological functions.</p>
+                  <img src="./images/pro_show/1/1.jpg" class="img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
             <%
                 rs.MoveFirst
                 i=1
@@ -91,7 +108,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
                     cname=""
                  end if
             %>
-          <div class="tab-pane <%=cname%> type_box" id="pro_show<%=i%>">
+          <div class="tab-pane type_box" id="pro_show<%=i%>">
             <div class="row">
               <div class="col-xs-12 col-sm-7">
                 <div class="type_box_left">

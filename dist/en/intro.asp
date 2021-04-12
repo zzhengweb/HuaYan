@@ -45,8 +45,7 @@ Set rs = Server.CreateObject("ADODB.Recordset")
   </div>
   <!-- 子页标题 -->
   <div class="inner_title text-center">
-    <div class="title_cn">关于我们</div>
-    <div class="title_en">ABOUT US</div>
+    <div class="title_cn">ABOUT US</div>
   </div>
   <!-- 简介 -->
   <div class="intro_wrapper">
@@ -86,7 +85,17 @@ Set rs = Server.CreateObject("ADODB.Recordset")
         </div>
       </div>
       <div class="intro_content">
-        <p>The company currently has a biomedical research and development platform of nearly 3000 cubic meters. The total area of the pilot plant is about 1500 square meters, of which the 100,000-level clean workshop is about 750 square meters, and the 10,000-level clean area is about 80 square meters. It has built a supporting fermentation laboratory, purification laboratory, quality inspection room of about 600 square meters, raw materials and finished products warehouse of about 700 square meters. The R&D platform is also equipped with professional R&D equipment, including 300L automatic fermentation system, high-pressure homogenizer, Millipore ultrafiltration system, separation and purification system equipped with GE packing, aseptic filling machine freeze dryer system, Agilent HPLC, and ThermoFisher microplate reader. Advanced production, research and development equipment can meet the needs of product research and development and pilot, mass production. At the same time, the construction of supporting gas boiler room steam system, water system, cooling water system and other public engineering equipment to provide guarantee for production, research and development. The company's second phase project construction has a production and research and development site of nearly 15,000 square meters for the later product variety expansion and large-scale production. And at the same time, the preparation work of the company's third-phase standardized production base is also rapidly advancing.</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-9">
+            <p>The company currently has a biomedical research and development platform of nearly 3000 cubic meters. The total area of the pilot plant is about 1500 square meters, of which the 100,000-level clean workshop is about 750 square meters, and the 10,000-level clean area is about 80 square meters. It has built a supporting fermentation laboratory, purification laboratory, quality inspection room of about 600 square meters, raw materials and finished products warehouse of about 700 square meters. The R&D platform is also equipped with professional R&D equipment, including 300L automatic fermentation system, high-pressure homogenizer, Millipore ultrafiltration system, separation and purification system equipped with GE packing, aseptic filling machine freeze dryer system, Agilent HPLC, and ThermoFisher microplate reader. </p>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <img src="./images/intro/2.jpg" class="img-responsive show_img">
+          </div>
+          <div class="col-xs-12">
+            <p>Advanced production, research and development equipment can meet the needs of product research and development and pilot, mass production. At the same time, the construction of supporting gas boiler room steam system, water system, cooling water system and other public engineering equipment to provide guarantee for production, research and development. The company's second phase project construction has a production and research and development site of nearly 15,000 square meters for the later product variety expansion and large-scale production. And at the same time, the preparation work of the company's third-phase standardized production base is also rapidly advancing.</p>
+          </div>
+        </div>
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             <img src="./images/intro/1.jpg" class="img-responsive show_img">

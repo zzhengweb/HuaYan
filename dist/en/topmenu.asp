@@ -57,7 +57,7 @@
           </li>
           <li><a href="news.asp">News</a></li>
           <li><a href="contact.asp">Contact</a></li>
-          <li class="visible-xs">
+          <li class="visible_xs">
             <a href="../index.asp">
               中文
             </a>
